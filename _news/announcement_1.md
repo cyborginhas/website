@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-3-14 
 inline: true
+published: true
 ---
 
-A simple inline announcement.
+Accepted to continue robot bandaging research in the Summer under [SURF](https://engineering.purdue.edu/Engr/Research/EURO/surf-symposium)!

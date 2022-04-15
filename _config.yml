@@ -3,23 +3,21 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
+first_name: Raghava 
+last_name: Uppuluri
+email: ruppulur@purdue.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Fascinated by building autonomous robot systems in the real world
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🔥 # the emoji used as the favicon
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+icon: 🤖 # the emoji used as the favicon
+url: https://raghavauppuluri.dev # the base hostname & protocol for your site
+baseurl: # the subpath of your site, e.g. /blog/
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -28,7 +26,7 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false 
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -46,18 +44,18 @@ max_width: 800px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: raghavauppuluri13 # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
+twitter_username: UppuluriRaghava # your Twitter handle
+linkedin_username: raghava-uppuluri # your LinkedIn user name
 scholar_userid: # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
@@ -72,7 +70,7 @@ dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Feel free to contact me via email ruppulur@purdue.edu
 
 google_analytics:  # your google-analytics ID (format: UA-XXXXXXXXX)
 google_site_verification:  # your google-site-verification ID (Google Search Console)
@@ -83,7 +81,7 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
+blog_name: #robotics and life  # your blog must have a name for it to show up in the nav bar
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
@@ -203,8 +201,8 @@ jekyll-archives:
 
 scholar:
 
-  last_name: Einstein
-  first_name: [Albert, A.]
+  last_name: Uppuluri 
+  first_name: [Raghava, S.]
 
   style: apa
   locale: en
