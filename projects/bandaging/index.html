@@ -2,7 +2,7 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://raghavauppuluri.dev/" />        
+  <head>        
     <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -10,24 +10,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Raghava  Uppuluri | Page not found</title>
+    <title>Raghava  Uppuluri | Robot Bandaging</title>
     <meta name="author" content="Raghava  Uppuluri" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Building a 2D cloth manipulation system for robots" />
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
 
     <!-- OpenGraph -->
     <meta property="og:site_name" content="Raghava  Uppuluri" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Raghava  Uppuluri | Page not found" />
-    <meta property="og:url" content="https://raghavauppuluri.dev/404.html" />
-    <meta property="og:description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta property="og:title" content="Raghava  Uppuluri | Robot Bandaging" />
+    <meta property="og:url" content="https://raghavauppuluri.dev/projects/bandaging/" />
+    <meta property="og:description" content="Building a 2D cloth manipulation system for robots" />
     
     <meta property="og:locale" content="en" />
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Page not found" />
-    <meta name="twitter:description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="twitter:title" content="Robot Bandaging" />
+    <meta name="twitter:description" content="Building a 2D cloth manipulation system for robots" />
     
     <meta name="twitter:site" content="@UppuluriRaghava" />
     <meta name="twitter:creator" content="@UppuluriRaghava" />
@@ -40,10 +40,10 @@
           "@type": "Person",
           "name": "Raghava  Uppuluri"
         },
-        "url": "https://raghavauppuluri.dev/404.html",
+        "url": "https://raghavauppuluri.dev/projects/bandaging/",
         "@type": "WebSite",
-        "description": "Looks like there has been a mistake. Nothing exists here.",
-        "headline": "Page not found",
+        "description": "Building a 2D cloth manipulation system for robots",
+        "headline": "Robot Bandaging",
         "sameAs": ["https://github.com/raghavauppuluri13", "https://www.linkedin.com/in/raghava-uppuluri", "https://twitter.com/UppuluriRaghava"],
         "name": "Raghava  Uppuluri",
         "@context": "https://schema.org"
@@ -66,7 +66,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://raghavauppuluri.dev/404.html">
+    <link rel="canonical" href="https://raghavauppuluri.dev/projects/bandaging/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -124,12 +124,38 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Robot Bandaging</h1>
+            <p class="post-description">Building a 2D cloth manipulation system for robots</p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://raghavauppuluri.dev/">here</a>.</p>
+            <h3 id="overview">Overview</h3>
+<p>The multi-semester project goal is to develop manipulation policies and perception system to allow a robot to apply a medical bandage to a hand.</p>
+
+<h3 id="fall-2021">Fall 2021</h3>
+
+<h4 id="state-estimation">State Estimation</h4>
+<p>The main goal was to explore robust object representations for the bandage. Implemented use of dense visual descriptors <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> and <strong>contrastive learning</strong> explore generalization across various colors and states of the bandage.</p>
+
+
+    <iframe src="https://drive.google.com/file/d/1Iu-oC3Ww0lPLtuP0n0b4cYQSFy-7weFv/preview" width="100%" height="480" allow="autoplay"></iframe>
+
+
+<h4 id="visuo-tactile-feedback">Visuo-Tactile Feedback</h4>
+<p>Preliminary data was collected using a visuo-tactile gripper on a cloth, exploring the contact shear stresses over time as a feedback signal for keeping the bandage within grasp. The data shown was slowly moving a bandage through a parallel-jaw gripper with a visuo-tactile sensor.</p>
+
+<div class="embed-container">
+  <iframe width="640" height="480" src="https://drive.google.com/file/d/14KDckDlQPEpLXb9ABH7D8vNec-3XeJ8n/preview" frameborder="0" allow="autoplay" allowfullscreen="">
+  </iframe>
+</div>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Florence, P., Manuelli, L., and Tedrake, R. Dense object nets: Learning dense visual object descriptors by and for robotic manipulation. Conference on Robot Learning, 2018. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
 
           </article>
 

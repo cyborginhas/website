@@ -2,7 +2,7 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://raghavauppuluri.dev/" />        
+  <head>        
     <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -10,24 +10,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Raghava  Uppuluri | Page not found</title>
+    <title>Raghava  Uppuluri | Rope Manipulation</title>
     <meta name="author" content="Raghava  Uppuluri" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Self-supervised rope manipulation in MuJoCo" />
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
 
     <!-- OpenGraph -->
     <meta property="og:site_name" content="Raghava  Uppuluri" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Raghava  Uppuluri | Page not found" />
-    <meta property="og:url" content="https://raghavauppuluri.dev/404.html" />
-    <meta property="og:description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta property="og:title" content="Raghava  Uppuluri | Rope Manipulation" />
+    <meta property="og:url" content="https://raghavauppuluri.dev/projects/rope-manipulation/" />
+    <meta property="og:description" content="Self-supervised rope manipulation in MuJoCo" />
     
     <meta property="og:locale" content="en" />
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Page not found" />
-    <meta name="twitter:description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="twitter:title" content="Rope Manipulation" />
+    <meta name="twitter:description" content="Self-supervised rope manipulation in MuJoCo" />
     
     <meta name="twitter:site" content="@UppuluriRaghava" />
     <meta name="twitter:creator" content="@UppuluriRaghava" />
@@ -40,10 +40,10 @@
           "@type": "Person",
           "name": "Raghava  Uppuluri"
         },
-        "url": "https://raghavauppuluri.dev/404.html",
+        "url": "https://raghavauppuluri.dev/projects/rope-manipulation/",
         "@type": "WebSite",
-        "description": "Looks like there has been a mistake. Nothing exists here.",
-        "headline": "Page not found",
+        "description": "Self-supervised rope manipulation in MuJoCo",
+        "headline": "Rope Manipulation",
         "sameAs": ["https://github.com/raghavauppuluri13", "https://www.linkedin.com/in/raghava-uppuluri", "https://twitter.com/UppuluriRaghava"],
         "name": "Raghava  Uppuluri",
         "@context": "https://schema.org"
@@ -66,7 +66,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://raghavauppuluri.dev/404.html">
+    <link rel="canonical" href="https://raghavauppuluri.dev/projects/rope-manipulation/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -124,12 +124,97 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Rope Manipulation</h1>
+            <p class="post-description">Self-supervised rope manipulation in MuJoCo</p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://raghavauppuluri.dev/">here</a>.</p>
+            <blockquote>
+  <p><a href="https://github.com/raghavauppuluri13/rope-manipulation" target="_blank" rel="noopener noreferrer">Github</a>, <a href="https://docs.google.com/presentation/d/1zRuhXxpXfUB-i6lupotLf98f1N1sZB_0EnAhp_hPZIs/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Presentation</a></p>
+</blockquote>
+
+<p>For the CS 593 Robotics course and research at <a href="">MARS Lab</a>, I am developing a self-supervised rope manipulation robot system in MuJoCo with a Panda robot arm. This project utilizes the following components:</p>
+<ul>
+  <li>Causal InfoGAN framework<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> for planning from pixel observations</li>
+  <li>Inverse Dynamics<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> model mapping pixels to high-level actions</li>
+  <li>PID/MPC-CEM for generating and executing joint-space trajectories from high-level actions</li>
+</ul>
+
+<h3 id="kinematic-planningcontrol">Kinematic Planning/Control</h3>
+
+<p>Given start and goal poses in task-space, simple linear interpolation is used to plan discretized XYZ waypoints from start to goal. Then inverse kinematics is used to generate joint-space trajectories.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/rope-manipulation/demo_1.gif-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/rope-manipulation/demo_1.gif-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/rope-manipulation/demo_1.gif-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/rope-manipulation/demo_1.gif" title="Demo 1">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/rope-manipulation/demo_2.gif-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/rope-manipulation/demo_2.gif-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/rope-manipulation/demo_2.gif-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/rope-manipulation/demo_2.gif" title="Demo 2">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/rope-manipulation/demo_3.gif-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/rope-manipulation/demo_3.gif-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/rope-manipulation/demo_3.gif-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/rope-manipulation/demo_3.gif" title="Demo 3">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Path planning in simulated competition arena.
+</div>
+
+<h3 id="learning-based-planning-from-pixels-with-causal-infogan">Learning-based Planning from Pixels with Causal InfoGAN</h3>
+
+<p><strong>Results are still in progress</strong></p>
+
+<h3 id="inverse-dynamics-from-pixels">Inverse Dynamics from Pixels</h3>
+
+<p><strong>Results are still in progress</strong></p>
+
+<h3 id="references">References</h3>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Kurutach, T., Tamar, A., Yang, G., Russell, S. J., &amp; Abbeel, P. (2018). Learning plannable representations with causal infogan. Advances in Neural Information Processing Systems, 31. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Nair, A., Chen, D., Agrawal, P., Isola, P., Abbeel, P., Malik, J., &amp; Levine, S. (2017, May). Combining self-supervised learning and imitation for vision-based rope manipulation. In 2017 IEEE international conference on robotics and automation (ICRA) (pp. 2146-2153). IEEE. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
 
           </article>
 
